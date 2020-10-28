@@ -11,8 +11,7 @@ Duo is a workflow to batch analyze functional similarities of proteins. A key ut
 4. [ps_scan 20.0](https://prosite.expasy.org/prosite.html)
 # Corevar workflow
 ![](Figure_1.png?raw=true "Duo workflow")
-
-* 
+* Overview of Duo workflow. (A) A schematic to illustrate the general working processes and the three main input contents defined by users. (B) A schematic to illustrate the correction analysis step between Query_proteins/Reference_proteins and Seed_database. (C) A schematic to illustrate the correction analysis step between Query_proteins and Reference_proteins.
 # Quick Start (run it on Linux system)
 ## domain_correlation_hmmer3.py
 
