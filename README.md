@@ -12,8 +12,35 @@ Duo is a workflow to batch analyze functional similarities of proteins. A key ut
 # Corevar workflow
 ![](Figure_1.png?raw=true "Duo workflow")
 * Overview of Duo workflow. (A) A schematic to illustrate the general working processes and the three main input contents defined by users. (B) A schematic to illustrate the correction analysis step between Query_proteins/Reference_proteins and Seed_database. (C) A schematic to illustrate the correction analysis step between Query_proteins and Reference_proteins.
+# Input/Output files description
+
+## Input files
+
+## Output files
+
 # Quick Start (run it on Linux system)
 ## domain_correlation_hmmer3.py
+* This is a hmmer3 dependent python script to correlate the proteins (references proteins/query proteins) according the pfam database (or other HMMs_profile)
+
+Usage: pyhont3 domain_correlation_hmmer3.py
+
+    --Q_PROTEINS (required=True, type=str, metavar='FILENAME', help="the user selected proteins file as Query_proteins")
+    
+    --R_PROTEINS (required=True, type=str, metavar='FILENAME', help="the user selected proteins file as Reference_proteins")
+   
+    --HMMDB_PATH (required=True, type=str, metavar='PATH', help="the path of hmm profile database (Seed_database). eg. /home/fix/downloads/pfam.hmmlib")
+    
+    --OUTPUT (default="domain_cor_hmmer3", type=str, metavar='directory', help="Output directory name")
+    
+    --PFAM (action='store_const', const=True, metavar='add --cut_tc option in hmmscan specific for pfam_db', help="optional, specific designed for pfam_db")
+    
+    --CPU (default=1, type=int, metavar='the cpu num you want to use', help="the cup number you want to use during hmmscan process, default is 1")
+    
+    --HIT_EVALUE (default=0.001, type=int, metavar='evalue thread', help="the evalue thread use during extracting hmm profile in domain-table, default is 0.001")
+    
+    --BIT_SCORE (default=10, type=int, metavar='bitscore thread', help="the bitscore thread use during extracting hmm profile in domain-table, default is 10")
+    
+
 
 ## domain_correlation_prosite.py
 
