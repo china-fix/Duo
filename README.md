@@ -10,6 +10,7 @@ Duo is a workflow to batch analyze functional similarities of proteins. A key ut
 3. [hmmer 3.3](http://hmmer.org/download.html);
 4. [ps_scan 20.0](https://prosite.expasy.org/prosite.html)
 # Corevar workflow
+![](Figure_1.png?raw=true "Duo workflow")
 
 * 
 # Quick Start (run it on Linux system)
