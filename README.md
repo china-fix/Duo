@@ -43,6 +43,31 @@ Usage: pyhont3 domain_correlation_hmmer3.py
 
 
 ## domain_correlation_prosite.py
+* This is a ps_scan dependent python script to correlate the proteins (references proteins/query proteins) according the scanProsite database.
+
+Usage: python3 domain_correlation_prosite.py
+
+
+    --Q_PROTEINS (required=True, type=str, metavar='FILENAME', help="the user selected proteins file as Query_proteins")
+    
+    --R_PROTEINS (required=True, type=str, metavar='FILENAME', help="the user selected proteins file as Reference_proteins")
+    
+    --PROSITE_DB_PATH (required=True, type=str, metavar='PATH', help="the path of prosite.dat profile (Seed_database). eg. /home/fix/downloads/prosite.dat")
+    
+    --EVALUATOR_PATH (required=True, type=str, metavar='PATH', help="the path of evaluator.dat profile (for evaluate the pattern). eg. /home/fix/downloads/evaluator.dat")
+    
+    --ps_scan_PATH (required=True, type=str, metavar='PATH', help="the folder path of ps_scan.pl program. eg. /home/fix/ps_scan/")
+    
+    --OUTPUT (default="domain_cor_prosite", type=str, metavar='directory', help="Output directory name")
+    
+    --ONLY_DOM (action='store_const', const=True, metavar='ONLY_DOMMAIN_DB', help="optional,only ps_scan the protein domain profiles")
+    
+    --ONLY_PAT (action='store_const', const=True, metavar='ONLY_PATTERN_DB', help="optional,only ps_scan the protein pattern profiles")
+    
+    --SIMPLE_ANN (action='store_const', const=True, metavar='ONLY SHOW THE MATCH ACC', help="optional, in the ouput only show the match profile ID, without detail description")
+    
+
+
 
 ## domain_correlation_InterPro.py
 
