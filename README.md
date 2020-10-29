@@ -137,6 +137,25 @@ COMPO 2.36800 4.52198 2.96929 2.70577 3.20715 3.01836 3.40293 ... 4.55599 3.6307
  
     HIT_PROTEINS_NUM_Q: count the protein number to the matched biological entity in Query_proteins.
  
+* **domain_correlation_inner.csv**:  subset of domain_correlation.csv file who only details the correlation records shared between Query_proteins and Reference_proteins.
+* **HITPROTEINS**:  a folder who contains the detailed protein names that correlated between Reference_proteins and Query_proteins.
+
+	* Example of one output file in HITPROTEINS folder (PFAM_HITPROTEINS_Q)
+ ```
+ STM1091
+STM2897
+STM1412
+STM0301
+STM4572
+STM2150
+STM3028
+STM0175
+STM3638
+STM0023
+PSLT017
+...
+ ```
+* **INPUT_BACKUP**:  a folder who contains the copys of the Query_proteins and Reference_proteins files inputted by user.
 
 
 
