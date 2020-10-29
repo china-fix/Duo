@@ -212,10 +212,37 @@ Usage: python3 domain_correlation_prosite.py
 
 
 ## domain_correlation_InterPro.py
+* This is a InterProScan dependent python script to correlate the proteins (references proteins/query proteins) according the different member databases.
+
+Usage: python3 domain_correlation_InterPro.py
+
+    --Q_PROTEINS (required=True, type=str, metavar='FILENAME', help="the user selected proteins file as Query_proteins")
+    
+    --R_PROTEINS (required=True, type=str, metavar='FILENAME', help="the user selected proteins file as Reference_proteins")
+    
+    --INTERPROSCAN_BIN (required=True, type=str, metavar='PATH', help="the path of hmm profile InterProScan. eg. /home/fix/export_bin/InterProScan/interproscan-5.46-81.0/interproscan.sh")
+    
+    --OUTPUT (default="domain_cor_InterPro", type=str, metavar='directory', help="Output directory name")
 
 ## custom_pfamdb.py
+* This is a hmmer3 dependent python script to constract your own customed pfam profiles database according the proteins you feed to the total pfam databse
 
+Usage: python3 custom_pfamdb.py
 
+    --CUSTOM_PROTEINS (required=True, type=str, metavar='FILENAME', help="the user selected proteins file (Reference_proteins) to help construct the custom_pfam databse")
+    
+    --HMMDB_PATH (required=True, type=str, metavar='PATH', help="the path of hmm profile database. eg. /home/fix/downloads/pfam.hmmlib")
+    
+    --OUTPUT (default="custom_pfamdb_out", type=str, metavar='directory', help="Output directory name")
+    
+    --DETAIL_DIC (action='store_const', const=True, metavar='get detailed hmms dictornary', help="optional, get more detailed hmms dictorynary")
+    
+    --CPU (default=1, type=int, metavar='the cpu num you want to use', help="the cup number you want to use during hmmscan process, default is 1")
+    
+    --HIT_EVALUE (default=0.001, type=int, metavar='evalue thread', help="the evalue thread use during extracting hmm profile in domain-table, default is 0.001")
+    
+    --BIT_SCORE (default=10, type=int, metavar='bitscore thread', help="the bitscore thread use during extracting hmm profile in domain-table, default is 10")
+   
 
         
 # Citation
