@@ -235,5 +235,5 @@ Usage: python3 custom_pfamdb.py
 
         
 # Citation
-
+Fei, X., Li, Q., Olsen, J. E., & Jiao, X. (2021). Duo: A Signature Based Method to Batch-Analyze Functional Similarities of Proteins. Frontiers in microbiology, 2308.
  
