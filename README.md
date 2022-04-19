@@ -237,3 +237,5 @@ Usage: python3 custom_pfamdb.py
 # Citation
 Fei, X., Li, Q., Olsen, J. E., & Jiao, X. (2021). Duo: A Signature Based Method to Batch-Analyze Functional Similarities of Proteins. Frontiers in microbiology, 2308.
  
+# Acknowledgments
+This study was supported by the National Natural Science Foundation of China (31730094, 31920103015); National Key Research and Development Program of China (2017YFD0500705; 2017YFD0500100); Jiangsu province agricultural science and technology independent innovation funds (CX(16)1028); and The Priority Academic Program Development of Jiangsu Higher Education Institutions (PAPD); Xiao Fei was supported by funding from the China Scholarship Council and Postgraduate Research &Practice Innovation Program of Jiangsu Province（Yangzhou University）(XKYCX18_102). 
